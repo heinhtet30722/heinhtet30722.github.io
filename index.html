@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hein Htet Kyaw</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="max-w-[1920px] mx-auto">
+    <div
+      class="bg-fixed bg-no-repeat bg-cover bg-center h-screen"
+      style="background-image: url('assets/images/bg.jpg')"
+    >
+      <!-- navbar -->
+      <nav
+        class="flex fixed max-w-[1920px] mx-auto top-0 left-2 right-2 z-50 items-center bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg my-2 py-3 px-3 lg:px-12 flex-wrap"
+      >
+        <a
+          href="#home"
+          class="p-2 mr-4 inline-flex items-center space-x-2 text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25"
+            />
+          </svg>
+          <span class="text-md md:text-xl font-bold uppercase tracking-wide">
+            Portfolio
+          </span>
+        </a>
+        <div
+          class="w-6 h-6 rounded-full border-2 border-indigo-400 animate-ping"
+        ></div>
+        <button
+          class="nav-toggler text-white inline-flex p-2 md:p-3 hover:bg-gray-900 rounded ml-auto lg:hidden"
+          data-target="#navigation"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+        <div
+          class="top-nav w-full lg:w-auto lg:inline-flex lg:flex-grow hidden"
+          id="navigation"
+        >
+          <div
+            class="lg:inline-flex text-sm md:text-md lg:flex-row lg:ml-auto flex flex-col"
+          >
+            <a
+              href="#home"
+              class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white hover:text-white"
+            >
+              <span>Home</span>
+            </a>
+            <a
+              href="#about"
+              class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white hover:text-white"
+            >
+              <span>About</span>
+            </a>
+            <a
+              href="#skills"
+              class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white hover:text-white"
+            >
+              <span>Skills</span>
+            </a>
+            <a
+              href="#projects"
+              class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white hover:text-white"
+            >
+              <span>Projects</span>
+            </a>
+            <a
+              href="#contact"
+              class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-white hover:text-white"
+            >
+              <span>Contact</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- home -->
+      <div
+        id="home"
+        class="min-h-screen bg-gray-900 flex justify-center items-center px-8 md:px-20"
+      >
+        <div class="grid md:grid-cols-2 mt-[79px] mb-10 gap-8">
+          <div
+            class="md:hidden absolute top-0 left-0 w-full h-full bg-blue-300 bg-no-repeat bg-center z-0"
+            style="background-image: url('assets/images/myphoto.png')"
+          ></div>
+          <div class="z-10">
+            <div class="flex-col flex justify-end font-bold">
+              <p class="text-white text-xl">
+                Hello, <span class="text-gray-400">I'm</span>
+              </p>
+              <p class="text-green-600 text-4xl mt-6">Hein Htet Kyaw</p>
+              <p id="type" class="h-8 text-white text-xl mt-2">
+                Junior Web Developer
+              </p>
+              <p class="text-xs mt-8 text-gray-200">
+                Specializing in back end development.<br />
+                Familiar with too numerous programming languages such as java,
+                php, <br />
+                C++, C#, Asp.net, Html 5, Css, JavaScript, MySql, Database.
+              </p>
+              <div>
+                <a
+                  href="../src/cv_form.pdf"
+                  download
+                  class="relative inline-block px-8 py-2 mt-12 font-medium group"
+                >
+                  <span
+                    class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-indigo-300 shadow-md shadow-indigo-500/50 group-hover:-translate-x-0 group-hover:-translate-y-0"
+                  ></span>
+                  <span
+                    class="absolute inset-0 w-full h-full bg-indigo-500"
+                  ></span>
+                  <span class="relative text-white text-sm">Download CV</span>
+                </a>
+              </div>
+              <div class="flex mt-10 space-x-4">
+                <a href="" class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-10 h-10 p-2.5 text-white bg-gray-700 rounded-full feather feather-facebook"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-10 h-10 p-2.5 text-white bg-gray-700 rounded-full feather feather-github"
+                  >
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-10 h-10 p-2.5 text-white bg-gray-700 rounded-full feather feather-twitter"
+                  >
+                    <path
+                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="assets/images/myphoto.png"
+              class="hidden md:block w-96 h-96 bg-blue-300 rounded-full"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- about -->
+      <div
+        id="about"
+        class="min-h-screen bg-gray-900 flex justify-center px-4 md:px-20"
+      >
+        <div
+          class="md:flex items-center mt-[79px] mb-10 text-white p-2 space-x-4"
+        >
+          <div class="grid md:grid-cols-2">
+            <div class="wow slideInLeft flex justify-center items-center">
+              <div class="relative flex items-end p-2 md:p-4">
+                <img
+                  src="assets/images/myphoto.png"
+                  class="w-44 h-52 md:w-72 md:h-96 bg-indigo-200"
+                  alt=""
+                />
+                <div
+                  class="w-20 h-20 border-t-4 border-l-4 border-white absolute top-0 left-0"
+                ></div>
+                <div
+                  class="w-20 h-20 border-b-4 border-r-4 border-white absolute bottom-0 right-0"
+                ></div>
+              </div>
+            </div>
+            <div class="wow slideInRight flex-cols p-8 space-y-3 md:space-y-6">
+              <div class="space-y-2">
+                <span class="text-xl md:text-3xl font-bold">About Me</span>
+                <p class="text-xs md:text-base">
+                  I have many experience with laravel framework and created a
+                  lot of project with laravel, asp.net and mobile application.
+                  Also got good reviews and achieved the best project award in
+                  local porducts show.
+                </p>
+              </div>
+
+              <div>
+                <table class="w-full">
+                  <tr>
+                    <td class="flex items-center space-x-1 py-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                        />
+                      </svg>
+                      <span class="text-md hidden md:block">Name</span>
+                    </td>
+                    <td>Hein Htet Kyaw</td>
+                  </tr>
+                  <tr>
+                    <td class="flex items-center space-x-1 py-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                        />
+                      </svg>
+                      <span class="text-md hidden md:block">Phone</span>
+                    </td>
+                    <td>09429041141</td>
+                  </tr>
+                  <tr>
+                    <td class="flex items-center space-x-1 py-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                        />
+                      </svg>
+                      <span class="text-md hidden md:block">Email</span>
+                    </td>
+                    <td>heinhtetkyaw.yangon@gmail.com</td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="flex-cols space-y-2">
+                <span class="text-sm md:text-xl font-bold">Qualification</span>
+                <div class="flex space-x-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+                    />
+                  </svg>
+                  <span class="text-xs md:text-md"
+                    >University of Computer Studies Taungoo - B.C.Sc</span
+                  >
+                </div>
+                <div class="flex space-x-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+                    />
+                  </svg>
+                  <span class="text-xs md:text-md"
+                    >Diploma in Software Engineering - D.Se</span
+                  >
+                </div>
+              </div>
+
+              <div class="flex-cols space-y-2">
+                <span class="text-sm md:text-xl font-bold">My Interests</span>
+                <div class="flex space-x-4">
+                  <div class="flex items-center space-x-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-headphones w-5 h-5"
+                    >
+                      <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                      <path
+                        d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"
+                      ></path>
+                    </svg>
+                    <span class="text-xs md:text-md">Music</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-briefcase w-5 h-5"
+                    >
+                      <rect
+                        x="2"
+                        y="7"
+                        width="20"
+                        height="14"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path
+                        d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"
+                      ></path>
+                    </svg>
+                    <span class="text-xs md:text-md">Travel</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-film w-5 h-5"
+                    >
+                      <rect
+                        x="2"
+                        y="2"
+                        width="20"
+                        height="20"
+                        rx="2.18"
+                        ry="2.18"
+                      ></rect>
+                      <line x1="7" y1="2" x2="7" y2="22"></line>
+                      <line x1="17" y1="2" x2="17" y2="22"></line>
+                      <line x1="2" y1="12" x2="22" y2="12"></line>
+                      <line x1="2" y1="7" x2="7" y2="7"></line>
+                      <line x1="2" y1="17" x2="7" y2="17"></line>
+                      <line x1="17" y1="17" x2="22" y2="17"></line>
+                      <line x1="17" y1="7" x2="22" y2="7"></line>
+                    </svg>
+                    <span class="text-xs md:text-md">Movie</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- skills -->
+      <div
+        id="skills"
+        class="min-h-screen bg-gray-800 flex justify-center px-4 md:px-20"
+      >
+        <div class="mt-[79px] mb-10 flex items-center">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-white">
+            <div
+              data-wow-duration="3s"
+              class="wow flipInX p-8 bg-gray-900 space-y-2 rounded-md shadow-md hover:scale-90 duration-300"
+            >
+              <svg
+                class="w-10 h-10 text-red-700"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M504.4,115.83a5.72,5.72,0,0,0-.28-.68,8.52,8.52,0,0,0-.53-1.25,6,6,0,0,0-.54-.71,9.36,9.36,0,0,0-.72-.94c-.23-.22-.52-.4-.77-.6a8.84,8.84,0,0,0-.9-.68L404.4,55.55a8,8,0,0,0-8,0L300.12,111h0a8.07,8.07,0,0,0-.88.69,7.68,7.68,0,0,0-.78.6,8.23,8.23,0,0,0-.72.93c-.17.24-.39.45-.54.71a9.7,9.7,0,0,0-.52,1.25c-.08.23-.21.44-.28.68a8.08,8.08,0,0,0-.28,2.08V223.18l-80.22,46.19V63.44a7.8,7.8,0,0,0-.28-2.09c-.06-.24-.2-.45-.28-.68a8.35,8.35,0,0,0-.52-1.24c-.14-.26-.37-.47-.54-.72a9.36,9.36,0,0,0-.72-.94,9.46,9.46,0,0,0-.78-.6,9.8,9.8,0,0,0-.88-.68h0L115.61,1.07a8,8,0,0,0-8,0L11.34,56.49h0a6.52,6.52,0,0,0-.88.69,7.81,7.81,0,0,0-.79.6,8.15,8.15,0,0,0-.71.93c-.18.25-.4.46-.55.72a7.88,7.88,0,0,0-.51,1.24,6.46,6.46,0,0,0-.29.67,8.18,8.18,0,0,0-.28,2.1v329.7a8,8,0,0,0,4,6.95l192.5,110.84a8.83,8.83,0,0,0,1.33.54c.21.08.41.2.63.26a7.92,7.92,0,0,0,4.1,0c.2-.05.37-.16.55-.22a8.6,8.6,0,0,0,1.4-.58L404.4,400.09a8,8,0,0,0,4-6.95V287.88l92.24-53.11a8,8,0,0,0,4-7V117.92A8.63,8.63,0,0,0,504.4,115.83ZM111.6,17.28h0l80.19,46.15-80.2,46.18L31.41,63.44Zm88.25,60V278.6l-46.53,26.79-33.69,19.4V123.5l46.53-26.79Zm0,412.78L23.37,388.5V77.32L57.06,96.7l46.52,26.8V338.68a6.94,6.94,0,0,0,.12.9,8,8,0,0,0,.16,1.18h0a5.92,5.92,0,0,0,.38.9,6.38,6.38,0,0,0,.42,1v0a8.54,8.54,0,0,0,.6.78,7.62,7.62,0,0,0,.66.84l0,0c.23.22.52.38.77.58a8.93,8.93,0,0,0,.86.66l0,0,0,0,92.19,52.18Zm8-106.17-80.06-45.32,84.09-48.41,92.26-53.11,80.13,46.13-58.8,33.56Zm184.52,4.57L215.88,490.11V397.8L346.6,323.2l45.77-26.15Zm0-119.13L358.68,250l-46.53-26.79V131.79l33.69,19.4L392.37,178Zm8-105.28-80.2-46.17,80.2-46.16,80.18,46.15Zm8,105.28V178L455,151.19l33.68-19.4v91.39h0Z"
+                  fill="red"
+                ></path>
+              </svg>
+              <div>
+                <span class="text-sm">Laravel</span>
+                <p class="text-xs text-gray-300">Nearly 2 years experience</p>
+              </div>
+            </div>
+            <div
+              data-wow-duration="3s"
+              class="wow flipInX p-8 bg-gray-900 space-y-2 rounded-md shadow-md hover:scale-90 duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                class="w-10 h-10"
+              >
+                <polygon
+                  fill="#81c784"
+                  points="23.987,17 18.734,8 2.974,8 23.987,44 45,8 29.24,8"
+                />
+                <polygon
+                  fill="#455a64"
+                  points="29.24,8 23.987,17 18.734,8 11.146,8 23.987,30 36.828,8"
+                />
+              </svg>
+              <div>
+                <span class="text-sm">Vue</span>
+                <p class="text-xs text-gray-300">Nearly 3 months experience</p>
+              </div>
+            </div>
+            <div
+              data-wow-duration="3s"
+              class="wow flipInX p-8 bg-gray-900 space-y-2 rounded-md shadow-md hover:scale-90 duration-300"
+            >
+              <div
+                class="w-10 h-10 rounded-full flex justify-center items-center bg-blue-700"
+              >
+                <span class="text-sm">.Net</span>
+              </div>
+              <div>
+                <span class="text-sm">Asp.net</span>
+                <p class="text-xs text-gray-300">Nearly 1 years experience</p>
+              </div>
+            </div>
+            <div
+              data-wow-duration="3s"
+              class="wow flipInX p-8 bg-gray-900 space-y-2 rounded-md shadow-md hover:scale-90 duration-300"
+            >
+              <svg
+                fill="#000000"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 50 50"
+                class="w-10 h-10 bg-green-500 rounded-full p-1"
+              >
+                <path
+                  d="M 25 0 C 12.309534 0 2 10.309534 2 23 C 2 29.876948 5.0307951 36.052534 9.8203125 40.267578 L 7.4042969 44.496094 A 1.0001 1.0001 0 0 0 7.2734375 44.992188 L 7.2734375 49.021484 A 1.0001 1.0001 0 0 0 8.78125 49.882812 L 12.253906 47.837891 A 1.0001 1.0001 0 0 0 12.613281 47.472656 L 14.818359 43.615234 C 17.889244 45.135008 21.345036 46 25 46 C 28.654964 46 32.110756 45.135008 35.181641 43.615234 L 37.386719 47.472656 A 1.0001 1.0001 0 0 0 37.746094 47.837891 L 41.21875 49.882812 A 1.0001 1.0001 0 0 0 42.726562 49.021484 L 42.726562 44.992188 A 1.0001 1.0001 0 0 0 42.595703 44.496094 L 40.179688 40.267578 C 44.969205 36.052534 48 29.876948 48 23 C 48 10.309534 37.690466 0 25 0 z M 25 2 C 36.609534 2 46 11.390466 46 23 C 46 29.143841 43.366738 34.657782 39.167969 38.498047 L 37.082031 34.847656 C 39.850467 32.018013 41.68586 28.262889 41.947266 24.0625 A 1.0001 1.0001 0 0 0 40.949219 23 L 36.949219 23 A 1.0001 1.0001 0 0 0 35.953125 23.917969 C 35.786763 25.917235 34.970507 27.680496 33.875 29.234375 L 31.710938 25.447266 L 32.705078 24.458984 A 1.0001 1.0001 0 0 0 33 23.75 L 33 15 C 33 13.35503 31.64497 12 30 12 L 29 12 L 29 9 A 1.0001 1.0001 0 0 0 28 8 L 22 8 A 1.0001 1.0001 0 0 0 21 9 L 21 12 L 20 12 C 18.35503 12 17 13.35503 17 15 L 17 23.75 A 1.0001 1.0001 0 0 0 17.291016 24.455078 L 18.285156 25.455078 L 10.832031 38.498047 C 6.6332619 34.657782 4 29.143841 4 23 C 4 11.390466 13.390466 2 25 2 z M 23 10 L 27 10 L 27 13 A 1.0001 1.0001 0 0 0 28 14 L 30 14 C 30.56503 14 31 14.43497 31 15 L 31 23.333984 L 29.783203 24.544922 A 1.0001 1.0001 0 0 0 29.757812 24.570312 L 26.820312 27.490234 L 25.544922 28.757812 C 25.216083 29.085266 24.714818 29.085857 24.386719 28.755859 L 23.171875 27.535156 L 23.166016 27.527344 L 20.240234 24.583984 A 1.0001 1.0001 0 0 0 20.228516 24.572266 L 19 23.337891 L 19 15 C 19 14.43497 19.43497 14 20 14 L 22 14 A 1.0001 1.0001 0 0 0 23 13 L 23 10 z M 25 16 C 23.75 16 22.685226 16.504756 22.001953 17.273438 C 21.318681 18.042119 21 19.027778 21 20 C 21 20.972222 21.318681 21.957881 22.001953 22.726562 C 22.685226 23.495244 23.75 24 25 24 C 26.25 24 27.314774 23.495244 27.998047 22.726562 C 28.681319 21.957881 29 20.972222 29 20 C 29 19.027778 28.681319 18.042119 27.998047 17.273438 C 27.314774 16.504756 26.25 16 25 16 z M 25 18 C 25.749999 18 26.185226 18.245244 26.501953 18.601562 C 26.81868 18.957881 27 19.472222 27 20 C 27 20.527778 26.81868 21.042119 26.501953 21.398438 C 26.185226 21.754756 25.749999 22 25 22 C 24.250001 22 23.814774 21.754756 23.498047 21.398438 C 23.18132 21.042119 23 20.527778 23 20 C 23 19.472222 23.18132 18.957881 23.498047 18.601562 C 23.814774 18.245244 24.250001 18 25 18 z M 37.710938 25 L 39.779297 25 C 39.301959 28.523783 37.663259 31.680178 35.177734 33.990234 A 1.0001 1.0001 0 0 0 35.130859 34.039062 C 34.250179 34.850533 33.271653 35.557051 32.216797 36.140625 A 1.0001 1.0001 0 0 0 32.113281 36.1875 C 29.994005 37.339546 27.577786 38 25 38 C 22.422214 38 20.005995 37.339546 17.886719 36.1875 A 1.0001 1.0001 0 0 0 16.541016 36.570312 L 11.009766 46.25 L 9.2734375 47.271484 L 9.2734375 45.257812 L 19.748047 26.925781 L 21.210938 28.396484 L 18.521484 33.103516 A 1.0001 1.0001 0 0 0 18.919922 34.482422 C 20.734122 35.448551 22.805922 36 25 36 C 27.195064 36 29.265037 35.446006 31.078125 34.480469 L 31.082031 34.486328 C 32.38342 33.793916 33.553939 32.886007 34.544922 31.810547 L 34.541016 31.806641 C 36.239523 29.965467 37.299087 27.585894 37.710938 25 z M 30.242188 26.908203 L 32.560547 30.966797 C 32.071474 31.432366 31.544254 31.856769 30.976562 32.226562 L 28.773438 28.369141 L 30.242188 26.908203 z M 27.304688 29.828125 L 29.167969 33.091797 C 27.873005 33.632719 26.490462 34 25 34 C 23.508747 34 22.125041 33.633753 20.830078 33.09375 L 22.673828 29.869141 L 22.96875 30.166016 C 24.058651 31.262065 25.859917 31.266293 26.955078 30.175781 L 27.304688 29.828125 z M 35.59375 36.273438 L 40.726562 45.257812 L 40.726562 47.271484 L 38.990234 46.25 L 33.955078 37.4375 C 34.525534 37.081752 35.071183 36.692273 35.59375 36.273438 z M 17.851562 38.308594 C 20.034562 39.337201 22.429765 40 25 40 C 27.570235 40 29.965438 39.337201 32.148438 38.308594 L 34.189453 41.878906 C 31.413269 43.233981 28.301379 44 25 44 C 21.698621 44 18.586731 43.233981 15.810547 41.878906 L 17.851562 38.308594 z"
+                />
+              </svg>
+              <div>
+                <span class="text-sm">Android Java</span>
+                <p class="text-xs text-gray-300">nearly 2 years experience</p>
+              </div>
+            </div>
+            <div
+              data-wow-duration="3s"
+              class="wow flipInX p-8 bg-gray-900 space-y-2 rounded-md shadow-md hover:scale-90 duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 48 48"
+                class="w-10 h-10"
+              >
+                <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z" />
+                <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z" />
+                <path
+                  fill="#FFF"
+                  d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"
+                />
+                <path
+                  fill="#EEE"
+                  d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"
+                />
+              </svg>
+              <div>
+                <span class="text-sm">Css</span>
+                <p class="text-xs text-gray-300">nearly 2 years experience</p>
+              </div>
+            </div>
+            <div
+              data-wow-duration="3s"
+              class="wow flipInX p-8 bg-gray-900 space-y-2 rounded-md shadow-md hover:scale-90 duration-300"
+            >
+              <svg
+                class="w-10 h-10"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>file_type_tailwind</title>
+                <path
+                  d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
+                  style="fill: #44a8b3"
+                />
+              </svg>
+              <div>
+                <span class="text-sm">Tailwind Css</span>
+                <p class="text-xs text-gray-300">nearly 2 years experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- projects -->
+      <div
+        id="projects"
+        class="min-h-screen bg-gray-900 flex justify-center px-4 md:px-20"
+      >
+        <div class="mt-[79px] mb-10 flex items-center md:p-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
+            <div
+              class="grid md:col-span-3 text-center py-2 text-white text-3xl"
+            >
+              Recent Projects
+            </div>
+            <div
+              class="wow bounceIn p-1 flex items-center w-80 h-52 rounded-sm bg-gray-500 group"
+            >
+              <div class="relative overflow-hidden cursor-pointer">
+                <img src="assets/images/tfc.jpeg" class="rounded-sm" alt="" />
+                <div
+                  class="absolute h-full flex-col rounded-sm w-full bg-black/70 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                >
+                  <span class="text-xl font-bold">TFC Online Ordering</span>
+                  <span>Web Application Development</span>
+                  <span>Asp.Net</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wow bounceIn p-1 flex items-center w-80 h-52 rounded-sm bg-gray-500 group"
+            >
+              <div class="relative overflow-hidden cursor-pointer">
+                <img src="assets/images/expense.jpeg" class="rounded-sm" alt="" />
+                <div
+                  class="absolute h-full flex-col rounded-sm w-full bg-black/70 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                >
+                  <span class="text-xl font-bold">Expense Manager</span>
+                  <span>Mobile Application Development</span>
+                  <span>Android Java</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wow bounceIn p-1 flex items-center w-80 h-52 rounded-sm bg-gray-500 group"
+            >
+              <div class="relative overflow-hidden cursor-pointer">
+                <img src="assets/images/saving.jpeg" class="rounded-sm" alt="" />
+                <div
+                  class="absolute h-full flex-col rounded-sm w-full bg-black/70 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                >
+                  <span class="text-xl font-bold">Saving Manager</span>
+                  <span>Mobile Application Development</span>
+                  <span>Android Java</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="wow bounceIn p-1 flex items-center w-80 h-52 rounded-sm bg-gray-500 group"
+            >
+              <div class="relative overflow-hidden cursor-pointer">
+                <img src="assets/images/survey.png" class="rounded-sm" alt="" />
+                <div
+                  class="absolute h-full flex-col rounded-sm w-full bg-black/70 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                >
+                  <span class="text-xl font-bold">Survey Management</span>
+                  <span>Web Application Development</span>
+                  <span>Laravel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-fixed bg-no-repeat bg-cover bg-center h-[75%]"
+        style="background-image: url('assets/images/bg.jpg')"
+      ></div>
+
+      <!-- contact -->
+      <div
+        id="contact"
+        class="min-h-screen flex justify-center bg-gray-900 items-center p-14"
+      >
+        <div
+          class="grid md:grid-cols-2 mt-[60px] md:mt-[79px] font-serif md:bg-white p-6 md:p-10 rounded-md"
+        >
+          <div class="flex justify-center items-center p-1">
+            <div
+              class="hidden wow slideInRight md:block px-6 py-8 bg-gray-900 text-white rounded-md ring-2 ring-offset-2 ring-gray-800"
+            >
+              <p class="text-[28px] uppercase font-bold mb-8">Contact Me</p>
+              <table>
+                <tr>
+                  <td class="px-1 py-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-5 h-5 feather feather-map-pin"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </td>
+                  <td>
+                    Shukhin Thar Road, Thaketa Township,<br />
+                    Yangon
+                  </td>
+                </tr>
+                <tr>
+                  <td class="px-1 py-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-5 h-5 feather feather-phone"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      ></path>
+                    </svg>
+                  </td>
+                  <td>09429041141</td>
+                </tr>
+                <tr>
+                  <td class="px-1 py-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-5 h-5 feather feather-mail"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      ></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </td>
+                  <td>heinhtetkyaw.yangon@gmail.com</td>
+                </tr>
+                <tr>
+                  <td class="px-1 py-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-5 h-5 feather feather-mail"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      ></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </td>
+                  <td>heinhtetkyaw.tgo@gmail.com</td>
+                </tr>
+                <tr>
+                  <th colspan="2">
+                    <div class="flex space-x-4 mt-6">
+                      <a href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-6 h-6 p-0.5 feather feather-facebook"
+                        >
+                          <path
+                            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                          ></path>
+                        </svg>
+                      </a>
+                      <a href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-6 h-6 p-0.5 feather feather-github"
+                        >
+                          <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                          ></path>
+                        </svg>
+                      </a>
+                      <a href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="w-6 h-6 p-0.5 feather feather-twitter"
+                        >
+                          <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                          ></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </th>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="p-8 wow slideInLeft bg-white rounded-md">
+            <p class="text-[28px] uppercase font-bold">Text Me</p>
+            <p class="text-md font-bold mb-8">Leave me a message</p>
+            <form
+              action="mailto:heinhtetkyaw.yangon@gmail.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="flex flex-col space-y-3">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  required
+                  class="px-3 py-2 bg-gray-200 text-sm rounded-md"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                  class="px-3 py-2 bg-gray-200 text-sm rounded-md"
+                />
+                <textarea
+                  name="message"
+                  placeholder="Write your message here"
+                  rows="4"
+                  class="px-3 py-2 bg-gray-200 text-sm rounded-md"
+                ></textarea>
+                <div class="flex justify-between items-center">
+                  <button
+                    type="submit"
+                    class="relative inline-block mt-4 px-12 py-2 font-medium group"
+                  >
+                    <span
+                      class="absolute inset-0 w-full h-full rounded-md transition duration-200 ease-out transform translate-x-1 translate-y-1 border-2 border-gray-900 shadow-md shadow-gray-900/50 group-hover:-translate-x-0 group-hover:-translate-y-0"
+                    ></span>
+                    <span
+                      class="absolute inset-0 w-full h-full bg-gray-900 rounded-md"
+                    ></span>
+                    <span class="relative text-white text-sm">Send</span>
+                  </button>
+                  <div class="flex space-x-4 mt-6 md:hidden">
+                    <a href="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-6 h-6 p-0.5 feather feather-facebook"
+                      >
+                        <path
+                          d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-6 h-6 p-0.5 feather feather-github"
+                      >
+                        <path
+                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-6 h-6 p-0.5 feather feather-twitter"
+                      >
+                        <path
+                          d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a href="#" id="scroll" class="hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-arrow-up fixed w-10 h-10 cursor-pointer text-gray-900 bottom-10 right-10 bg-white p-2 rounded-full animate-bounce"
+        >
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"
+    ></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
